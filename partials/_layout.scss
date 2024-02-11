@@ -1,0 +1,141 @@
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto; //left = up/dow     |     right = right/left
+    padding: 0 8px;
+}
+
+// background home
+.bg-home {
+    position: relative;
+}
+
+.bg-home::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #0c2135), url("../assets/img/bg.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+}
+
+// hero
+.hero {
+    color: $white-normal;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    h1 {
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 44px;
+    }
+
+    p {
+        text-align: center;
+        margin: 14px 0;
+
+    }
+}
+
+.button-contact {
+    padding: 14px 28px;
+    color: $white-normal;
+    background-color: $orange-bylogo;
+    border: 0;
+    border-color: $white-normal;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 420;
+    margin: 14px 0;
+}
+
+.button-contact:hover {
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.07);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+
+        h1 {
+            font-size: 24px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 21px;
+    }
+}
+
+//about
+.about {
+    background-color: $primary-light;
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 14px;
+    padding: 34px 12px 64px 14px;
+
+    img {
+        max-width: 570px;
+    }
+}
+
+.about-content div {
+    flex: 1;
+}
+
+.about-description {
+    h2 {
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        margin-bottom: 14px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+}
