@@ -1,0 +1,23 @@
+
+iframe {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 20px;
+    color: $white-normal;
+}
+
+footer img {
+    width: 300px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 14px;
+}
