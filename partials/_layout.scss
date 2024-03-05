@@ -114,7 +114,7 @@
     padding: 34px 12px 64px 14px;
 
     img {
-        max-width: 570px;
+        max-width: 400px;
     }
 }
 
@@ -134,8 +134,18 @@
     }
 }
 
+.about-photos {
+    display: flex;
+    flex-direction:row;
+    padding-left: 1rem;
+}
+
 @media screen and (max-width: 768px) {
     .about-content {
+        flex-direction: column;
+    }
+
+    .about-photos {
         flex-direction: column;
     }
 }
@@ -220,6 +230,36 @@
     .haircut img {
         max-width: 730px;
     }
+}
+
+// differential
+.differential {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 54px 14px;
+    background-color: $primary-light;
+    color: $white-normal;
+
+    h2 {
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        margin-bottom: 14px;
+        line-height: 150%;
+    }
+}
+
+.differential-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 14px;
+    padding: 34px 12px 64px 14px;
 }
 
 // whatsapp button
