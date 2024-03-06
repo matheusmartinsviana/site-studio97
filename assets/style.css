@@ -307,11 +307,54 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  gap: 14px;
+  gap: 7rem;
   padding: 34px 12px 64px 14px;
 }
 
+.recurrence-plan {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  text-align: center;
+}
+.recurrence-plan p {
+  max-width: 700px;
+}
+.recurrence-plan h2 {
+  padding-bottom: 24px;
+}
+
+.button-contact2 {
+  padding-top: 3rem;
+}
+
+.differential-topics {
+  display: flex;
+  flex-direction: column;
+}
+.differential-topics .topic {
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 14px;
+  max-width: 700px;
+  font-weight: 400;
+}
+.differential-topics h2 {
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+.fa-solid {
+  color: #F15323;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .differential-content {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
 .btn-whatsapp {
   position: fixed;
   bottom: 14px;
