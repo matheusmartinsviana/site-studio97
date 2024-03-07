@@ -74,6 +74,10 @@ i {
     display: none;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -163,6 +167,7 @@ i {
   }
 }
 .about {
+  padding-top: 5rem;
   background-color: #0c2135;
   overflow: hidden;
   color: #fff;
@@ -193,8 +198,9 @@ i {
   line-height: 150%;
 }
 
-.about-photos {
+.barber-about {
   display: flex;
+  gap: 24px;
   flex-direction: row;
   padding-left: 1rem;
 }
@@ -203,7 +209,7 @@ i {
   .about-content {
     flex-direction: column;
   }
-  .about-photos {
+  .barber-about {
     flex-direction: column;
   }
 }
@@ -247,6 +253,7 @@ i {
   border-radius: 8px;
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
   overflow: hidden;
+  max-width: 300px;
 }
 .haircut img {
   width: 100%;
@@ -260,18 +267,37 @@ i {
 }
 
 .haircut-info {
+  justify-content: center;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   padding: 14px;
   background-color: #fff;
   z-index: 2;
+  gap: 10px;
 }
 
 .haircut-info button {
   color: #fff;
   background-color: #F15323;
   padding: 4px 8px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+
+.cta-schedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 14px 0;
+}
+.cta-schedule button {
+  color: #fff;
+  background-color: #F15323;
+  padding: 15px 4rem;
+  font-size: 18px;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
@@ -322,6 +348,7 @@ i {
 }
 .recurrence-plan h2 {
   padding-bottom: 24px;
+  color: #F15323;
 }
 
 .button-contact2 {
@@ -342,6 +369,7 @@ i {
 .differential-topics h2 {
   padding-bottom: 24px;
   text-align: center;
+  color: #F15323;
 }
 
 .fa-solid {
@@ -353,6 +381,9 @@ i {
   .differential-content {
     flex-direction: column;
     gap: 5rem;
+  }
+  .differential-title {
+    display: none;
   }
 }
 .btn-whatsapp {

@@ -50,7 +50,7 @@
                     <img src="assets/img/logo.png" alt="Logo da barbearia Studio 97">
                 </div> <!-- header-logo -->
                 <div>
-                    <a class="header-button" href="#">
+                    <a class="header-button" href="#services-title">
                         Conhecer Serviços
                     </a>
                 </div><!-- div of header-button -->
@@ -75,17 +75,23 @@
                     cada cliente.</p>
                 <p>Horário de funcionamento: <strong>09:00</strong> ás <strong>20:00</strong></p>
             </div> <!-- about-description -->
-            <div class="about-photos">
-                <img src="assets/img/about.png" alt="Cortes realizados na barbearia Studio 97">
-                <img src="assets/img/about.png" alt="Cortes realizados na barbearia Studio 97">
-            </div>
+            <aside class="barber-about">
+                <div class="barber-info">
+                    <img src="assets/img/foto tiago.jpg" alt="Tiago Barber Barbearia Studio 97">
+                    <p>Tiago Lima Barber</p>
+                </div>
+                <div class="barber-info">
+                    <img src="assets/img/foto mauricio.jpg" alt="Mauricio Barber Barbearia Studio 97">
+                    <p>Mauricio Cesar</p>
+                </div>
+            </aside>
         </div> <!-- about-content -->
     </section>
 
     <!-- services -->
     <section class="services">
         <div class="services-content container">
-            <h2>Serviços</h2>
+            <h2 id="services-title">Serviços</h2>
             <p>Conheça oque podemos lhe oferecer por um preço justo e que cabe no seu bolso e ainda contar com
                 profissionais especializados e um ambiente climatizado com o melhor que podemos oferecer.</p>
         </div><!-- services-content -->
@@ -94,41 +100,43 @@
             <div class="haircut">
                 <img src="assets/img/service-hair.jpg" alt="Corte degradê no Studio 97">
                 <div class="haircut-info">
-                    <strong>Corte degradê normal</strong>
-                    <button>
-                        R$ 40,00
-                    </button>
+                    <p><s><strong>R$ 80,00</strong></s></p> <button>Desconto de 20%</button>
+                </div>
+                <div class="cta-schedule">
+                    <p>Combo cabelo e barba 2x /P mês</p> <br>
+                    <button> Agendar</button>
                 </div>
             </div> <!-- haircut -->
 
             <div class="haircut">
                 <img src="assets/img/service-beard.jpg" alt="Barba completa no Studio 97">
                 <div class="haircut-info">
-                    <strong>Barba completa</strong>
-                    <button>
-                        R$ 40,00
-                    </button>
+                    <p><s><strong>R$ 80,00</strong></s></p> <button>Desconto de 20%</button>
+                </div>
+                <div class="cta-schedule">
+                    <p>Combo cabelo e barba 2x /P mês</p> <br>
+                    <button> Agendar</button>
                 </div>
             </div> <!-- haircut -->
 
             <div class="haircut">
                 <img src="assets/img/service-pack.jpg" alt="Corte degradê e barba completa no Studio 97">
                 <div class="haircut-info">
-                    <strong>Corte e Barba</strong>
-                    <button>
-                        R$ 70,00
-                    </button>
+                    <p><s><strong>R$ 80,00</strong></s></p> <button>Desconto de 20%</button>
+                </div>
+                <div class="cta-schedule">
+                    <p>Combo cabelo e barba 2x /P mês</p> <br>
+                    <button> Agendar</button>
                 </div>
             </div> <!-- haircut -->
-
         </section> <!-- haircuts -->
     </section> <!-- services -->
 
     <section class="differential"> <!-- differencial -->
-        <h2>Nossos diferenciais</h2>
+        <h2 class="differential-title">Nossos diferenciais</h2>
         <div class="differential-content container"> <!-- differencial-content -->
             <div class="recurrence-plan"> <!-- recurrence-plan -->
-                <h2 style="color: #F15323;">Plano de recorrência</h2>
+                <h2>Plano de recorrência</h2>
                 <div class="recurrence-description">
                     <p>Para você manter sempre o visual alinhado criamos o plano de recorrência de 15 em 15 dias, além
                         de você cortar seu cabelo e sua barba 2 vezes ao mês, você paga mais barato no serviço.</p>
@@ -140,7 +148,7 @@
                 </div>
             </div> <!-- recurrence-plan -->
             <div class="differential-topics"> <!-- differential-topics -->
-                <h2 style="color: #F15323;">Destaques</h2>
+                <h2>Destaques</h2>
                 <ul>
                     <li class="topic"> <i class="fa-solid fa-check"></i>
                         <p>Aqui nós lembramos e entramos em contato com você pelo seu whatsapp</p>

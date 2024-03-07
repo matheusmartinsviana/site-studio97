@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto; //left = up/dow     |     right = right/left
@@ -100,6 +104,7 @@
 
 //about
 .about {
+    padding-top: 5rem;
     background-color: $primary-light;
     overflow: hidden;
     color: $white-normal;
@@ -134,8 +139,9 @@
     }
 }
 
-.about-photos {
+.barber-about {
     display: flex;
+    gap: 24px;
     flex-direction: row;
     padding-left: 1rem;
 }
@@ -145,7 +151,7 @@
         flex-direction: column;
     }
 
-    .about-photos {
+    .barber-about {
         flex-direction: column;
     }
 }
@@ -191,6 +197,7 @@
     border-radius: 8px;
     box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
     overflow: hidden;
+    max-width: 300px;
 
     img {
         width: 100%;
@@ -205,12 +212,14 @@
 }
 
 .haircut-info {
+    justify-content: center;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     padding: 14px;
     background-color: $white-normal;
     z-index: 2;
+    gap: 10px;
 }
 
 .haircut-info button {
@@ -220,6 +229,24 @@
     border-radius: 5px;
     border: 0;
     cursor: pointer;
+}
+
+.cta-schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0 14px 0;
+
+    button {
+        color: $white-normal;
+        background-color: $orange-bylogo;
+        padding: 15px 4rem;
+        font-size: 18px;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -241,6 +268,7 @@
     padding: 54px 14px;
     background-color: $primary-light;
     color: $white-normal;
+
     h2 {
         font-size: 38px;
         margin-bottom: 24px;
@@ -265,12 +293,14 @@
     flex-direction: column;
     align-self: flex-start; // align with another div
     text-align: center;
+
     p {
         max-width: 700px;
     }
 
     h2 {
         padding-bottom: 24px;
+        color: $orange-bylogo;
     }
 }
 
@@ -281,6 +311,7 @@
 .differential-topics {
     display: flex;
     flex-direction: column;
+
     .topic {
         display: flex;
         font-size: 16px;
@@ -292,6 +323,7 @@
     h2 {
         padding-bottom: 24px;
         text-align: center;
+        color: $orange-bylogo;
     }
 }
 
@@ -304,6 +336,10 @@
     .differential-content {
         flex-direction: column;
         gap: 5rem;
+    }
+
+    .differential-title {
+        display: none;
     }
 }
 
