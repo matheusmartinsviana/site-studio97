@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   width: 100%;
 }
@@ -286,23 +287,62 @@ html {
   cursor: pointer;
 }
 
-.cta-schedule {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 0 14px 0;
-}
-.cta-schedule button {
-  color: #fff;
-  background-color: #F15323;
-  padding: 15px 4rem;
-  font-size: 18px;
-  border-radius: 5px;
-  border: 0;
-  cursor: pointer;
-}
+/*.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
 
+    .carousel-container {
+        display: flex;
+        transition: transform 0.5s ease;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .haircuts {
+        display: flex;
+        gap: 15px;
+        padding: 0 44px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prev-btn,
+    .next-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .prev-btn {
+        left: 10px;
+    }
+
+    .next-btn {
+        right: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .haircuts {
+            padding: 0; // Remover o preenchimento horizontal em dispositivos móveis
+            overflow-x: auto; // Adicionar rolagem horizontal em dispositivos móveis
+            -webkit-overflow-scrolling: touch; // Ativar rolagem suave no iOS
+            scroll-snap-type: x mandatory; // Forçar rolagem suave entre os slides
+            -ms-overflow-style: none; // Remover barra de rolagem no Internet Explorer
+            scrollbar-width: none; // Remover barra de rolagem no Firefox
+            &::-webkit-scrollbar {
+                display: none; // Remover barra de rolagem no Chrome/Safari
+            }
+        }
+    }
+}
+*/
 @media screen and (max-width: 768px) {
   .haircuts {
     flex-direction: column;
