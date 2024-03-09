@@ -189,7 +189,7 @@ html {
     padding: 0 44px 33px 44px
 }
 
-.haircut {
+/*.haircut {
     flex: 1;
     flex-direction: column;
     display: flex;
@@ -209,7 +209,7 @@ html {
 .haircut img:hover {
     transform: scale(1.2);
     z-index: 1;
-}
+}*/
 
 .haircut-info {
     justify-content: center;
@@ -229,6 +229,59 @@ html {
     border-radius: 5px;
     border: 0;
     cursor: pointer;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 33.333%;
+    padding: 14px 40px 0 40px;
+    //flex: 0 0 auto;
+    max-height: 400px;
+    
+    img {
+        min-width: 33.333%;
+        flex: 0 0 auto;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .slide {
+        min-width: 100%;
+        /* Full width on mobile */
+    }
 }
 
 //carrosel
