@@ -167,7 +167,7 @@ html {
   }
 }
 .about {
-  padding-top: 5rem;
+  padding: 120px 10px;
   background-color: #0c2135;
   overflow: hidden;
   color: #fff;
@@ -178,13 +178,19 @@ html {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 14px;
+  gap: 100px;
   padding: 34px 12px 64px 14px;
 }
 .about-content img {
+  border-radius: 100px;
   max-width: 400px;
 }
 
+@media screen and (min-width: 1280px) {
+  .about-content {
+    width: 1200px;
+  }
+}
 .about-content div {
   flex: 1;
 }
@@ -220,7 +226,7 @@ html {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 54px 14px;
+  padding: 90px 14px;
 }
 
 .services-content h2 {
@@ -286,29 +292,78 @@ html {
   cursor: pointer;
 }
 
-.cta-schedule {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 0 14px 0;
-}
 .cta-schedule button {
   color: #fff;
   background-color: #F15323;
-  padding: 15px 4rem;
+  padding: 14px 3rem;
   font-size: 18px;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
+  margin-bottom: 16px;
 }
 
-@media screen and (max-width: 768px) {
-  .haircuts {
-    flex-direction: column;
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 1145px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  padding: 14px 40px 0 40px;
+  flex: 0 0 auto;
+}
+.slide img {
+  min-width: 33.333%;
+  flex: 0 0 auto;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prev-btn,
+.next-btn {
+  color: #F15323;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+@media screen and (max-width: 1280px) {
+  .carousel {
+    max-width: 796px;
   }
-  .haircut img {
-    max-width: 730px;
+}
+@media screen and (max-width: 1240px) {
+  .carousel {
+    max-width: 762px;
+  }
+}
+@media screen and (max-width: 764px) {
+  .carousel {
+    max-width: 380px;
   }
 }
 .differential {

@@ -104,7 +104,7 @@ html {
 
 //about
 .about {
-    padding-top: 5rem;
+    padding: 120px 10px;
     background-color: $primary-light;
     overflow: hidden;
     color: $white-normal;
@@ -115,11 +115,17 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 14px;
+    gap: 100px;
     padding: 34px 12px 64px 14px;
 
     img {
+        border-radius: 100px;
         max-width: 400px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .about-content {
+        width: 1200px;
     }
 }
 
@@ -164,7 +170,7 @@ html {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 54px 14px;
+    padding: 90px 14px;
 }
 
 .services-content h2 {
@@ -231,31 +237,82 @@ html {
     cursor: pointer;
 }
 
-.cta-schedule {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 0 14px 0;
+.cta-schedule button{
+    color: #fff;
+    background-color: #F15323;
+    padding: 14px 3rem;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
 
-    button {
-        color: $white-normal;
-        background-color: $orange-bylogo;
-        padding: 15px 4rem;
-        font-size: 18px;
-        border-radius: 5px;
-        border: 0;
-        cursor: pointer;
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 1145px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    //min-width: 33.333%;
+    padding: 14px 40px 0 40px;
+    flex: 0 0 auto;
+    //max-height: 400px;
+
+    img {
+        min-width: 33.333%;
+        flex: 0 0 auto;
+        height: 200px;
+        object-fit: cover;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .haircuts {
-        flex-direction: column;
-    }
+.prev-btn,
+.next-btn {
+    color: $orange-bylogo;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    z-index: 10;
+}
 
-    .haircut img {
-        max-width: 730px;
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+@media screen and (max-width: 1280px) {
+    .carousel {
+        max-width: 796px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .carousel {
+        max-width: 762px;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .carousel {
+        max-width: 380px;
     }
 }
 
