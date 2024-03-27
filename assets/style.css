@@ -313,11 +313,10 @@ html {
   cursor: pointer;
 }
 
-.cta-schedule button {
-  color: #fff;
-  background-color: #F15323;
+.cta-schedule a {
+  color: #F15323;
   padding: 14px 3rem;
-  font-size: 18px;
+  font-size: 28px;
   border-radius: 5px;
   border: 0;
   cursor: pointer;

@@ -21,12 +21,17 @@ prevBtn.addEventListener('click', () => {
 });
 
 nextBtn.addEventListener('click', () => {
-    if (currentIndex < slides.length - 3) {
+    const isMobile = window.innerWidth <= 764;
+    const limit = isMobile ? slides.length - 1 : slides.length - 3;
+
+    if (currentIndex < limit) {
         currentIndex += 1;
     } else {
         currentIndex = 0; // Loop back to the start
     }
+
     updateCarousel();
+
 });
 
 // Update slide position on window resize to maintain the correct slide visibility
