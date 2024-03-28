@@ -84,3 +84,10 @@ i {
         display: none;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .header-logo img {
+        width: 300px;
+        margin-top: 10px;
+    }
+}
